@@ -1,5 +1,5 @@
 name: AWS Aurora Cluster Snapshot
-author: Durgaprasad Budhwani
+author: José Carlos Joaquim (original by Durgaprasad Budhwani)
 branding:
   icon: upload-cloud
   color: orange
@@ -18,7 +18,7 @@ inputs:
     description: AWS Aurora Database Cluster Name
     default: true
   prefix:
-    description: Prefix of the backup
+    description: Prefix for the backup
     default: false
 runs:
   using: docker

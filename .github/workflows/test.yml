@@ -4,7 +4,7 @@ on:
   # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#push
   push:
     branches:
-      - 'main'
+      - "main"
 
 jobs:
   try:
@@ -21,4 +21,5 @@ jobs:
           secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           region: ${{ secrets.REGION }}
           cluster_name: ${{ secrets.CLUSTER_NAME }}
+          slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
           prefix: backup
