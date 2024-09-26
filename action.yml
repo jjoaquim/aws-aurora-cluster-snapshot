@@ -17,6 +17,9 @@ inputs:
   cluster_name:
     description: AWS Aurora Database Cluster Name
     default: true
+  slack_webhook:
+    description: Slack Webhook URL
+    default: true
   prefix:
     description: Prefix for the backup
     default: false
