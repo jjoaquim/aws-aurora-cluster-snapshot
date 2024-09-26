@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: Durgaprasad-Budhwani/aws-aurora-cluster-snapshot@v1
+    - uses: jjoaquim/aws-aurora-cluster-snapshot@main
       with:
         access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
